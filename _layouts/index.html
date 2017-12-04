@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<div class="header">
+  {% include components/nav/index.html %}
+
+  <h1 >User test tracking & reporting</h1>
+  <section>
+    <p id="register">Userology is a user testing tool designed to track and report on user test results.</p>
+
+    <h2>Launching soon. Register for early access.</h2>
+  </secion>
+  <form  class="register">
+    <label for="full_name">Full Name</label>
+    <input type="text" name="full_name" id="full_name">
+    <label id="full_name" for="email">Email</label>
+    <input type="text" name="email" id="email">
+    <button>Register For Early Access</button>
+  </form>
+</div>
+
+<div class="main">
+  <section class="main__section">
+    <img src="{{ '/assets/img/insights.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
+    <div class="main__text">
+      <h2>Capture outcomes & insights</h2>
+      <p>Start by defining your tasks and adding participants. Record task completion, note observations and capture key insights.</p>
+    </div>
+  </section>
+  <section class="main__section">
+    <img src="{{ '/assets/img/recordings.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
+    <div class="main__text">
+      <h2>Review recordings faster</h2>
+      <p>There’s no need for your team to wade through hours of user testing videos to view problem areas. Review your test once, mark the times where problem areas occur and direct the team to those precise moments efficiently.</p>
+    </div>
+  </section>
+  <section class="main__section">
+    <img src="{{ '/assets/img/results.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
+    <div class="main__text">
+      <h2>Share results with the team</h2>
+      <p>Powerful analytics and professional reporting features allow you to generate and share test results. Give your team the information and shared understanding they need to create the best user experiences.</p>
+    </div>
+  </section>
+</div>
+
+<div class="cta">
+  <section>
+    <h2>Register for free early access.</h2>
+    <a href="#register" class="button">Register For Early Access</a>
+  </section>
+</div>

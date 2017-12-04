@@ -1,0 +1,143 @@
+---
+---
+// Global Styles
+@import "colors";
+@import "reset";
+
+
+// Components
+@import "components/nav/style";
+@import "components/footer/style";
+
+
+.header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c96d2+0,3ee5ac+100 */
+  background: $blue; /* Old browsers */
+  background-image: url("{{ '/assets/img/curve.png' | fingerprint }}"), -moz-linear-gradient(top, $blue 0%, $green 100%); /* FF3.6-15 */
+  background-image: url("{{ '/assets/img/curve.png' | fingerprint }}"), -webkit-linear-gradient(top, $blue 0%, $green 100%); /* Chrome10-25,Safari5.1-6 */
+  background-image: url("{{ '/assets/img/curve.png' | fingerprint }}"), linear-gradient(to bottom, $blue 0%, $green 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 0px 20px;
+  min-height: 80vh;
+
+  h1, h2, p, label {
+    color: $white;
+  }
+}
+
+.main {
+  padding: 30px 30px;
+  max-width: 1145px;
+  margin: 0 auto;
+}
+
+.main__img, 
+.main__text {
+  width: 100%;
+  max-width: 503px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main__section {
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.cta {
+  background-color: $grey-light;
+  height: 40vh;
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.register {
+  max-width: 414px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.footer{
+  padding: 40px;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+.button
+{
+  /* Fix IE7 display bug */
+  overflow:visible;
+  width:auto;
+  padding: 15px 50px 15px 15px;
+  margin: 20px 0;
+  color: $white;
+  cursor: pointer;
+  border-radius: 1000px;
+  background-color: $purple;
+  background-image: url("{{ '/assets/img/button_icon.svg' | fingerprint }}");
+  background-position: center right;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  font-size: 14px;
+  &:hover, &:focus {
+    color: $white;
+    padding: 15px 60px 15px 22px;
+    outline: 0;
+    box-shadow: 2px 2px  5px $grey;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .header {
+    margin: 20px 20px 0 20px;
+  }
+
+  .footer {
+    margin: 0px 20px 20px 20px;
+  }
+
+  .cta {
+    margin: 0 20px;
+  }
+
+  .main__section {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+    &:nth-child(odd) {
+       flex-direction: row-reverse;
+    }
+  }
+
+  .main__img, 
+  .main__text {
+    width: 100%;
+    max-width: 503px;
+    margin: 0 20px; 
+    flex-basis: 50%;
+    width: 100px;
+  }
+
+  .main__img {
+    padding-bottom: 30px;
+  }
+
+  .footer{
+    padding: 60px;
+  }
+
+}
+
