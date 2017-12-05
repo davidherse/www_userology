@@ -65,6 +65,71 @@
   margin: 0 auto;
 }
 
+.thank_you, .loading, .error {
+  display: none;
+}
+
+.loading__circle {
+  stroke-width: 1px;
+  stroke: $white;
+  fill:none;
+  & path {
+    stroke-dasharray:17px, 17px; 
+    stroke-dashoffset: 0px;
+    display: none;
+  }
+  & circle {
+    stroke-dasharray:76px, 76px;
+    stroke-dashoffset: 0px;
+    transform:rotate(-90deg);
+    transform-origin: 50% 50%;
+    -webkit-animation: circle 3s ease-in-out forwards;
+    animation: circle 3s ease-in-out forwards;
+  }
+}
+
+@keyframes circle {
+    0% {
+        stroke-dashoffset: 76px;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.loading__tick {
+  stroke-width: 1px;
+  stroke: $white;
+  fill:none;
+  & path {
+    stroke-dasharray:17px, 17px; 
+    stroke-dashoffset: 0px;
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    display: block;
+  }
+  & circle {
+    stroke-dasharray:76px, 76px;
+    stroke-dashoffset: 0px;
+    transform:rotate(-90deg);
+    transform-origin: 50% 50%;
+    -webkit-animation: ccircle 1s ease-in-out forwards;
+    animation: circle 1s ease-in-out forwards;
+  }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 17px;
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+
 .footer{
   padding: 40px;
 }

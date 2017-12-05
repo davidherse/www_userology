@@ -10,12 +10,27 @@ layout: default
 
     <h2>Launching soon. Register for early access.</h2>
   </secion>
-  <form  class="register">
-    <label for="full_name">Full Name</label>
-    <input type="text" name="full_name" id="full_name">
-    <label id="full_name" for="email">Email</label>
-    <input type="text" name="email" id="email">
-    <button>Register For Early Access</button>
+
+
+  <form class="register" data-zapier="https://hooks.zapier.com/hooks/catch/522598/sq7q57/">
+    <span class="fields">
+      <label for="full_name">Full Name</label>
+      <input type="text" name="full_name" id="full_name">
+      <label id="full_name" for="email">Email</label>
+      <input type="text" name="email" id="email">
+      <button type="submit">Register For Early Access</button>
+    </span>
+    <div class="loading">
+      <div class="loading__circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-263.5 236.5 26 26">
+          <g class="svg-success">
+            <circle cx="-250.5" cy="249.5" r="12"/>
+            <path d="M-256.46 249.65l3.9 3.74 8.02-7.8"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="error"><p class="error__message"></p></div>
   </form>
 </div>
 

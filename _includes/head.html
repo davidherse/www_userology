@@ -4,5 +4,6 @@
   <title>{{ site.title }}{% if page.title %} — {{ page.title }}{% endif %}</title>
  
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href="{{ '/style.css' | fingerprint }}">  
+  <link rel="stylesheet" href="{{ '/style.css' | fingerprint }}">
+  <script src="{{ '/js/main.js' | fingerprint }}"> </script>
 </head>
