@@ -12,6 +12,7 @@
 .footer__section {
   display: block;
   padding: 10px 0;
+  min-width: 224px;
   &:first-child {
     border-bottom: 1px solid #377EAD;
   }

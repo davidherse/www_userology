@@ -1,5 +1,5 @@
 ---
 layout: index
-title: How to play 500
+title: Userology - Great UX starts with shared understanding
 permalink: /
 ---
