@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: end;
+}
+
+.nav__logo {
+  display: inline-block;
+  margin: 43px 25px;
+}
+
+.nav__home {
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 12px;
+  flex: 1;
+
+}
+
+@media all and (min-width: 769px) {
+  .nav__home {
+    flex: 0;
+  }
+}

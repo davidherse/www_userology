@@ -1,2 +1,0 @@
-# www_userology
-userolgy_marketing_site
