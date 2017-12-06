@@ -1,6 +1,6 @@
 ---
 layout: privacy
-title: Userology - Terms and conditions
+title: Terms and conditions
 permalink: /terms
 ---
 

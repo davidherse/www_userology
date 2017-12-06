@@ -1,6 +1,6 @@
 ---
 layout: privacy
-title: Userology - About us & user experience 
+title: Privacy Policy
 permalink: /privacy
 ---
 
