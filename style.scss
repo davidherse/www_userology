@@ -37,6 +37,12 @@
   margin: 0 auto;
 }
 
+.header__h1 {
+ max-width: 1145px;
+ margin: 0 auto;
+ direction: block;
+}
+
 .main, .main--about, .main--privacy-policy {
   padding: 30px 30px;
   max-width: 1145px;
@@ -58,6 +64,15 @@
   max-width: 503px;
   margin: 0 auto;
   display: block;
+}
+
+.main__open {
+  margin: 20px 0 70px 0;
+  p {
+    color: $graphite;
+    text-align: center;
+    @extend h1;
+  }
 }
 
 .main__section {
@@ -144,7 +159,7 @@ input[type="submit"],
     align-items: flex-end;
     margin-bottom: 40px;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
        flex-direction: row-reverse;
     }
   }

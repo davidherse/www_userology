@@ -4,10 +4,8 @@ layout: default
 <div class="header">
   {% include components/nav/index.html %}
 
-  <h1 >User test tracking & reporting</h1>
+  <h1 id="register" class="header__h1">User test tracking & reporting</h1>
   <section class="header__section">
-    <p id="register">Userology is a user testing tool designed to track and report on user test results. We believe great UX starts with shared understanding. Userology can help.</p>
-
     <h2>Launching soon. Register for early access.</h2>
   </secion>
 
@@ -39,6 +37,10 @@ layout: default
 </div>
 
 <div class="main">
+  <section class="main__open">
+    <p>We believe great UX starts with shared understanding. Userology can help.</p>
+  </section>
+
   <section class="main__section">
     <img src="{{ '/assets/img/insights.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
     <div class="main__text">
