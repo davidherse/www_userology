@@ -38,9 +38,8 @@
 }
 
 .header__h1 {
- max-width: 1145px;
- margin: 0 auto;
- direction: block;
+  max-width: 1145px;
+  margin: 12px auto 24px auto;
 }
 
 .main, .main--about, .main--privacy-policy {
@@ -71,7 +70,10 @@
   p {
     color: $graphite;
     text-align: center;
-    @extend h1;
+  }
+
+  h2 {
+    text-align: center;
   }
 }
 
@@ -159,7 +161,7 @@ input[type="submit"],
     align-items: flex-end;
     margin-bottom: 40px;
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
        flex-direction: row-reverse;
     }
   }
