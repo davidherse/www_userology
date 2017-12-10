@@ -35,11 +35,19 @@
 .header__section {
   max-width: 750px;
   margin: 0 auto;
+  h2 {
+    margin-bottom: 46px;
+  }
 }
 
 .header__h1 {
   max-width: 900px;
   margin: 12px auto 24px auto;
+}
+
+.header__p {
+  max-width: 540px;
+  margin: 0 auto 18px auto;
 }
 
 .main, .main--about, .main--privacy-policy {
@@ -83,6 +91,11 @@
   &:last-child {
     margin-bottom: 30px;
   }
+}
+
+.main__cta {
+  align-items: center;
+  text-align: center;
 }
 
 .cta {

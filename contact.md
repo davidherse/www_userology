@@ -4,4 +4,5 @@ title: Contact us
 permalink: /contact
 ---
 
-If you have questions or feedback please get in touch at [info@userology.io](mailto:info@userology.io)
+If you have questions or ideas please get in touch at [info@userology.io](mailto:info@userology.io)
+
