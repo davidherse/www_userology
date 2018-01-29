@@ -2,10 +2,10 @@
 layout: default
 ---
 <div class="header">
-  {% include components/nav/index.html %}
+  {% include components/nav/remote.html %}
 
-  <h1 id="register" class="header__h1">We believe great UX starts with shared understanding.</h1>
-  <p class="header__p">Streamline your user experience research and reporting, so your team can spend more time creating something awesome.</p>
+  <h1 id="register" class="header__h1">Remotely run user tests on any site, with anyone.</h1>
+  <p class="header__p">Capture interactions, audio and video on any modern broswer without any extra downloads.</p>
 
 
   <div id="mc_embed_signup" class="register">
@@ -24,7 +24,7 @@ layout: default
         <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
       </div>
       <div class="mc-field-group">
-        <input type="hidden" name="PRODUCT" class="" id="mce-PRODUCT" value="analytics" >
+        <input type="hidden" name="PRODUCT" class="" id="mce-PRODUCT" value="remote" >
       </div>
       <div id="mce-responses" class="clear">
         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -39,31 +39,38 @@ layout: default
 
 <div class="main">
   <section class="main__section">
-    <img src="{{ '/assets/img/insights.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
+    <img src="{{ '/assets/img/map.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
     <div class="main__text">
-      <h2>Capture outcomes & insights</h2>
-      <p>Start by defining your tasks and adding participants. Record task completion, tag observations and share insights.</p>
+      <h2>Wherever your users are on their device</h2>
+      <p>Simply send participants a Userology link to start testing any site. Have people to test your site when and where it's convient for them.</p>
     </div>
   </section>
   <section class="main__section">
-    <img src="{{ '/assets/img/recordings.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
+    <img src="{{ '/assets/img/download.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
     <div class="main__text">
-      <h2>Review recordings faster</h2>
-      <p>There’s no need for your team to wade through hours of user testing videos to view problem areas. Review your test once, mark the times where problem areas occur and direct the team to those precise moments.</p>
+      <h2>Nothing special to download or add to your site</h2>
+      <p>Test participants can focused on the tasks with nothing for them to install. Never bothering your dev team again about adding another script to a site.</p>
     </div>
   </section>
   <section class="main__section">
-    <img src="{{ '/assets/img/results.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
+    <img src="{{ '/assets/img/bot.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
     <div class="main__text">
-      <h2>Share results with the team</h2>
-      <p>Powerful analytics and reporting features allow you to generate and share test results. Provide your team with the information and shared understanding they need to create something incredible.</p>
+      <h2>A virtual moderator keeps users on track and talking</h2>
+      <p>The Userology moderator bot is the ideal unbiased moderator. It will guide users through task and prompt them to talk about what they are thinking or issue they are experiencing.</p>
+    </div>
+  </section>
+  <section class="main__section">
+    <img src="{{ '/assets/img/websites.png' | fingerprint }}" class="main__img" alt="Userology" width="387"/>
+    <div class="main__text">
+      <h2>Test any website, even ones you don’t own</h2>
+      <p>Sometimes it's usefull to test a competitors sites or site you don’t have technical control of. With Userology, you can test any site on the web with no additional effort. Simply type in the site URL, set up your tasks and send the test user the link.</p>
     </div>
   </section>
 </div>
 
 <div class="cta">
   <section>
-    <h2>Register for free early access.</h2>
+    <h2>Register for early access.</h2>
     <a href="#register" class="button">Register For Early Access</a>
   </section>
 </div>
